@@ -7,17 +7,27 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @brief Clase test pasajeros
+ * @author Elena Rijo Garcia - alu0101265421
+ */
 @DisplayName("Passengers Test")
 public class passengerstets {
 
     private Passenger elena, ana;
 
+    /**
+     * @brief Inicializacion de los valores
+     */
     @BeforeEach
     void setUp() {
         elena = new Passenger("id1", "Elena", "ES");
         ana = new Passenger("id2", "Ana", "ES");
     }
 
+    /**
+     * @brief Test para comprobar el funcionamiento del getter
+     */
     @Test
     @DisplayName("Comprobando el funcionamiento del getter")
     void testGettersPasajeros() {
@@ -35,6 +45,9 @@ public class passengerstets {
         );
     }
 
+    /**
+     * @brief Test para comprobar el funcionamiento de anadir pasajeros a un vuelo
+     */
     @Test
     @DisplayName("Comprobando que se puede anadir pasajero al vuelo")
     public void testAnadirPasajero() {

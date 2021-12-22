@@ -7,6 +7,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @brief Clase test vuelo
+ * @author Elena Rijo Garcia - alu0101265421
+ */
 @DisplayName("Flight Test")
 public class flightest {
 
@@ -14,6 +18,9 @@ public class flightest {
     private Passenger elena, ana;
 
 
+    /**
+     * @brief Inicializacion de los valores
+     */
     @BeforeEach
     void setUp() {
         vuelo = new Flight("BA2490", 1);
@@ -22,6 +29,9 @@ public class flightest {
         ana = new Passenger("id2", "Ana", "ES");
     }
 
+    /**
+     * @brief Test para comprobar si se pueden anadir pasajeros
+     */
     @Test
     @DisplayName("Anadir varios pasajeros")
     void testAnadirPasajeros() {
@@ -31,6 +41,9 @@ public class flightest {
         );
     }
 
+    /**
+     * @brief Test para comprobar si se pueden eliminar pasajeros
+     */
     @Test
     @DisplayName("Eliminar pasajeros")
     void testEliminarPasajeros() {

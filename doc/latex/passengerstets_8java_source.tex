@@ -1,0 +1,57 @@
+\hypertarget{passengerstets_8java_source}{}\doxysection{passengerstets.\+java}
+\label{passengerstets_8java_source}\index{src/test/java/es/ull/passengers/passengerstets.java@{src/test/java/es/ull/passengers/passengerstets.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00001}00001 \textcolor{keyword}{package }es.ull.passengers;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00003}00003 \textcolor{keyword}{import} es.ull.flights.Flight;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00004}00004 \textcolor{keyword}{import} org.junit.jupiter.api.BeforeEach;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00005}00005 \textcolor{keyword}{import} org.junit.jupiter.api.DisplayName;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00006}00006 \textcolor{keyword}{import} org.junit.jupiter.api.Test;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00008}00008 \textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.jupiter.api.Assertions.*;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00014}00014 @DisplayName(\textcolor{stringliteral}{"{}Passengers Test"{}})}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00015}\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1passengerstets}{00015}} public class \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1passengerstets}{passengerstets}} \{}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00017}00017     \textcolor{keyword}{private} \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} elena, ana;}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00022}00022     @BeforeEach}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00023}00023     \textcolor{keywordtype}{void} setUp() \{}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00024}00024         elena = \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}(\textcolor{stringliteral}{"{}id1"{}}, \textcolor{stringliteral}{"{}Elena"{}}, \textcolor{stringliteral}{"{}ES"{}});}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00025}00025         ana = \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}(\textcolor{stringliteral}{"{}id2"{}}, \textcolor{stringliteral}{"{}Ana"{}}, \textcolor{stringliteral}{"{}ES"{}});}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00026}00026     \}}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00031}00031     @Test}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00032}00032     @DisplayName(\textcolor{stringliteral}{"{}Comprobando el funcionamiento del getter"{}})}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00033}00033     \textcolor{keywordtype}{void} testGettersPasajeros() \{}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00034}00034         assertAll(\textcolor{stringliteral}{"{}Verificar los atributos del pasajero Elena"{}},}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00035}00035                 () -\/> assertEquals(\textcolor{stringliteral}{"{}id1"{}}, elena.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}{getIdentifier}}(), \textcolor{stringliteral}{"{}Identificacion del pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00036}00036                 () -\/> assertEquals(\textcolor{stringliteral}{"{}Elena"{}}, elena.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}{getName}}(), \textcolor{stringliteral}{"{}Nombre pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00037}00037                 () -\/> assertEquals(\textcolor{stringliteral}{"{}ES"{}}, elena.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}{getCountryCode}}(), \textcolor{stringliteral}{"{}Pais pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00038}00038                 () -\/> assertEquals(\textcolor{stringliteral}{"{}Passenger Elena with identifier: id1 from ES"{}} , elena.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1}{toString}}())}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00039}00039         );}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00040}00040         assertAll(\textcolor{stringliteral}{"{}Verificar los atributos del pasajero Ana"{}},}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00041}00041                 () -\/> assertEquals(\textcolor{stringliteral}{"{}id2"{}}, ana.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}{getIdentifier}}(), \textcolor{stringliteral}{"{}Identificacion del pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00042}00042                 () -\/> assertEquals(\textcolor{stringliteral}{"{}Ana"{}}, ana.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}{getName}}(), \textcolor{stringliteral}{"{}Nombre pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00043}00043                 () -\/> assertEquals(\textcolor{stringliteral}{"{}ES"{}}, ana.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}{getCountryCode}}(), \textcolor{stringliteral}{"{}Pais pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00044}00044                 () -\/> assertEquals(\textcolor{stringliteral}{"{}Passenger Ana with identifier: id2 from ES"{}} , ana.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1}{toString}}())}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00045}00045         );}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00051}00051     @Test}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00052}00052     @DisplayName(\textcolor{stringliteral}{"{}Comprobando que se puede anadir pasajero al vuelo"{}})}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00053}\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1passengerstets_ac53f25ceb228e84a6dded4191a279adb}{00053}}     public \textcolor{keywordtype}{void} testAnadirPasajero() \{}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00054}00054         \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} vuelo = \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}}(\textcolor{stringliteral}{"{}BA2490"{}}, 3);}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00055}00055         \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} vuelo2 = \textcolor{keyword}{new} \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}}(\textcolor{stringliteral}{"{}BA2491"{}}, 0);}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00058}00058         assertAll(\textcolor{stringliteral}{"{}Vericar que nos ponemos unir al vuelo"{}},}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00059}00059                 () -\/> assertEquals(\textcolor{stringliteral}{"{}BA2490"{}}, elena.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af}{getFlight}}().\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}{getFlightNumber}}(), \textcolor{stringliteral}{"{}Configuracion correcta del vuelo y pasajero"{}}),}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00060}00060                 () -\/> assertThrows(RuntimeException.class, () -\/> ana.\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e}{joinFlight}}(vuelo2), \textcolor{stringliteral}{"{}No se puede unir al vuelo"{}})}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00061}00061         );}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{passengerstets_8java_source_l00064}00064 \}}
+
+\end{DoxyCode}
